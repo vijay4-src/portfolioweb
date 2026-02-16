@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Seller Project | Vijay Mathur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Vijay Mathur<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero" style="padding: 150px 0 50px;">
+        <div class="container">
+            <h4 class="fade-in" style="color: var(--primary-color);">Sales Performance Analysis</h4>
+            <h1 class="fade-in" style="font-size: 3rem; margin-bottom: 1rem;">Amazon Seller Business Problem Solution</h1>
+            <div class="project-meta fade-in">
+                <span><i class="fas fa-tools"></i> Excel</span>
+                <span><i class="fas fa-calendar-alt"></i> 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details" style="padding-bottom: 100px;">
+        <div class="container">
+            
+            <div class="detail-card fade-in" style="background: var(--card-bg); padding: 2rem; border-radius: 15px; margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">The Business Problem</h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; line-height: 1.8;">
+                    Sales data is available at a transactional level but is not transformed into meaningful insights. 
+                    As a result, decisions related to inventory planning, pricing, returns control, and regional focus 
+                    are reactive and time-consuming.
+                </p>
+            </div>
+
+            <section class="project-details">
+    <h2 class="fade-in" style="text-align: center; margin-bottom: 2rem;">Project Roadmap</h2>
+    <div class="roadmap-grid">
+        
+        <div class="roadmap-item fade-in">
+            <div class="step-number">01</div>
+            <h3>Dataset Preparation</h3>
+            <p>I first understood and documented the dataset structure and ensured it was anonymized for analysis.</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/Dataset_Description.pdf')">
+                <i class="fas fa-file-pdf"></i> View Dataset
+            </button>
+        </div>
+        
+        <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">02</div>
+            <h3>BRD Document</h3>
+            <p>I captured business problems, objectives, stakeholders, and scope in the BRD</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/BRD_Amazon_Seller_Sales_Performance_Analysis.pdf')">
+                <i class="fas fa-file-pdf"></i> View BRD
+            </button>
+        </div>
+        <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">03</div>
+            <h3>FRD Document</h3>
+            <p>I converted business requirements into detailed functional specifications and system behavior</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/FRD_SRS_Amazon_Seller_Sales_Performance_Analysis.pdf')">
+                <i class="fas fa-file-pdf"></i> View FRD
+            </button>
+        </div>
+         <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">04</div>
+            <h3>Mockups</h3>
+            <p>I created visual mockups to validate dashboard layout and functionality before implementation</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/Mockups_Amazon_Seller_Performance_Dashboard.pdf')">
+                <i class="fas fa-file-pdf"></i> View BRD PDF
+            </button>
+            <button class="btn-pdf" onclick="openPdfModal('documents/Amazon Dashboard Layout.pdf')">
+                <i class="fas fa-file-pdf"></i> View Dash Layout
+            </button>
+        </div>
+         <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">05</div>
+            <h3>Excel Dashboard</h3>
+            <p>I performed data analysis using Excel to generate KPIs and insights for dashboard</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/Excel_Dashboard_Analysis_Explanation.pdf')">
+                <i class="fas fa-file-pdf"></i> View Dash Explanation
+            </button>
+        </div>
+         <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">06</div>
+            <h3>UAT</h3>
+            <p>“I designed and executed UAT test cases to validate the solution against business requirements</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/UAT_Test_Cases.pdf')">
+                <i class="fas fa-file-pdf"></i> View UAT
+            </button>
+        </div>
+         <BR>
+        <div class="roadmap-item fade-in">
+            <div class="step-number">07</div>
+            <h3>Methodology</h3>
+            <p>I followed a hybrid Agile-Waterfall approach for structured documentation and iterative validation</p>
+            
+            <button class="btn-pdf" onclick="openPdfModal('documents/Agile_Waterfall_Explanation.pdf')">
+                <i class="fas fa-file-pdf"></i> View Methodology
+            </button>
+        </div>
+
+        </div>
+
+    </section>
+
+
+<div id="pdfModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closePdfModal()">&times;</span>
+        <h3 id="modalTitle" style="color: var(--primary-color); margin-bottom: 10px;">Document Viewer</h3>
+        <iframe id="pdfFrame" src="" width="100%" height="500px"></iframe>
+    </div>
+</div>
+
+           
+        </div>
+    
+        <section class="live-dashboard-section" style="padding: 20px 0; background: #0f172a;">
+        
+        <div class="container-full">
+            
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 1rem;">Live Interactive Dashboard</h2>
+            
+            <div class="dashboard-wrapper fade-in">
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" 
+                src="https://1drv.ms/x/c/7bb741cf142172e2/IQQlrX-FYzDjQbSiSboQ0RFEAfBFv1kyReMea1g1D8YukgA?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=IN3&edaebp=&edaebf=ctrl"></iframe>
+            </div>
+
+            <div class="fade-in" style="text-align: center; margin-top: 1.5rem;">
+                <a href="Documents/Amazon_Seller_Performance_Dashboard.xlsx" download class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Excel File
+                </a>
+                <a href="projects.html" class="btn btn-primary">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                
+                <div class="footer-about">
+                    <h2>Vijay Mathur<span></span></h2>
+                    <p>Building bridges between data and web experiences.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-socials">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:vijay.kumar@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vijay Mathur. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
